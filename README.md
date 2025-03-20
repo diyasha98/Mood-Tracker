@@ -22,7 +22,7 @@ A simple web application to track your daily mood using emoji selections. The ap
 
 # Live Demo
 
-
+[View the live project here] (https://moodboard-diyasha.netlify.app/)
 
 # Installation
 
