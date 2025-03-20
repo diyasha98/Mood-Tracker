@@ -19,13 +19,6 @@ A simple web application to track your daily mood using emoji selections. The ap
 
 - Stores Final Mood of the day
 
-Screenshots
-
-
-
-
-
-(Ensure you upload these images to a screenshots/ folder in your repository.)
 
 # Live Demo
 
