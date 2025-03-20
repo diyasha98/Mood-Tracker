@@ -53,6 +53,7 @@ function addMoodToHistory(mood, date) {
     moodHistory.style.overflowY = "auto";
     moodDiv.innerHTML = `<span>${mood}</span><small><i>${date}</i></small>`;
     moodDiv.style.minHeight = "50px";
+    moodDiv.style.maxHeight ="70px";
     moodHistory.appendChild(moodDiv);
     moodDiv.classList.add("card");
     //console.log(moodDiv);
@@ -107,6 +108,10 @@ function updateCalenderStorage(mood ,mdate) {
         const datecards = document.querySelectorAll(".datecard");
         datecards[datecards.length -1].innerHTML = `<span>${m}</span><small><i>${mdate}</i></small>`;
     }
+    else {
+        addMoodToCalendar(m, mdate);
+    }
+    
     
 }
 
@@ -116,6 +121,7 @@ function addMoodToCalendar (mood, date) {
     moodCalendar.style.overflowY = "auto";
     moodDiv.innerHTML = `<span>${mood}</span><small><i>${date}</i></small>`;
     moodDiv.style.minHeight = "50px";
+    moodDiv.style.maxHeight ="70px";
     moodCalendar.appendChild(moodDiv);
     moodDiv.classList.add("datecard");
 }
