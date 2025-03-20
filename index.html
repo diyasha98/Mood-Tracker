@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <h2>Daily Mood Tracker</h2>
+    </center>
+    <div class="container">
+
+        <!-- Mood Selection -->
+        <div class="mood-selection">
+            <h3 class="headings">Choose your Current Mood</h3>
+            <button class="mood-btn" data-mood="😊"> Happy <span>😊</span></button>
+            <button class="mood-btn" data-mood="😐"> Neutral <span>😐</span></button>
+            <button class="mood-btn" data-mood="😍"> Excited <span>😍</span></button>
+            <button class="mood-btn" data-mood="😢"> Sad <span>😢</span></button>
+            <button class="mood-btn" data-mood="😠"> Angry <span>😠</span></button>
+        </div>
+
+        <!-- Display Selected Mood -->
+        <div class="mood-display">
+            <h3 class="headings">Today's Mood:</h3>
+            <p id="selected-mood">No mood selected</p>
+        </div>
+
+        <!-- Mood History -->
+        
+        <div class="mood-history">
+            <h3 class="headings">Past Moods</h3>
+            <button onclick="clearMoodHistory()" class="reset">Reset</button>
+        </div>
+
+        
+        <div id="mood-calendar">
+            <h3 class="headings">Mood Calendar</h3>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</body>
+</html>

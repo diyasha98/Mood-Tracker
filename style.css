@@ -1,0 +1,153 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    background-color: #fbf772;
+}
+h2 {
+    margin: 20px;
+    padding: 20px;
+    font-size: xx-large;
+}
+.headings {
+    text-align: center;
+    margin: 10px;
+}
+
+.container {
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    height: 100vh;
+    flex-wrap: wrap; /* Ensures elements wrap if needed */
+    gap: 20px;
+}
+.container div {
+    position: relative;
+    padding: 10px;
+    width: 320px;
+    height: 480px;
+    align-items: center;
+    backdrop-filter: blur(15px);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Ensures the pseudo-element stays within bounds */
+    gap: 2px; /* Space between cards */
+}
+
+/* Adding a pseudo-element for the background */
+.mood-selection::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.3; /* Adjust this value to control transparency */
+    z-index: -1; /* Sends it behind the buttons */
+    border-radius: 40px; /* Matches the parent container */
+}
+
+
+/* CSS */
+.mood-btn {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: .75rem;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding: .75rem 1.2rem;
+  text-align: center;
+  text-decoration: none #6B7280 solid;
+  text-decoration-thickness: auto;
+  transition-duration: .2s;
+  transition-property: background-color,border-color,color,fill,stroke;
+  transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  flex: 1;
+}
+
+.mood-btn:hover {
+  background-color: #595a44;
+}
+
+.mood-btn:focus {
+  box-shadow: none;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+@media (min-width: 768px) {
+  .mood-btn {
+    padding: .75rem 1.5rem;
+  }
+}
+
+.design span{
+    font-size: 200px;
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.design small{
+    text-align: middle;
+    padding: 10px;
+    width: 100%;
+    display: block;
+    font-style: italic;
+    font-size: 20px;
+}
+
+
+.card{
+  position: relative;
+  background-color: transparent;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  color: black;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    display: block;
+}
+
+.datecard{
+  position: relative;
+  background-color: transparent;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  color: black;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
